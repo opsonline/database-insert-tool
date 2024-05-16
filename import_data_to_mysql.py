@@ -198,7 +198,7 @@ if __name__ == "__main__":
 
     file_extension = os.path.splitext(args.file)[1]
 
-    if file_extension in ('.xls', 'xlsx'):
+    if file_extension in ('.xls', '.xlsx'):
         data_insert_mysql(xls_generator_data(args.file), args.host, args.port, args.user, args.password, args.db,
                           args.table)
     elif file_extension in ('.csv', ):
